@@ -1,7 +1,4 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
-}
+@import url(./global.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
