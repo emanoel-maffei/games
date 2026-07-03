@@ -10,4 +10,5 @@ body {
 
 a.button-link {
     text-decoration: none;
+    outline: none;
 }
