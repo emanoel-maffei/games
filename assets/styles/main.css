@@ -1,8 +1,48 @@
-.link-jogos li {
-    display: flex;
-    flex-direction: column;
+main {
+    min-height: 80vh;
 }
 
-.link-jogos img {
+.link-jogos {
+    padding: 32px;
+}
+
+.link-jogos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+
+    width: 100%;
+
+    list-style: none;
+}
+
+.link-jogos li {
+    background-color: hsl(0, 0%, 95%);
+    
+    width: 232px;
+
+    padding: 16px;
+
+    border-radius: 8px;
+}
+
+/* .link-jogos li:hover {
+
+} */
+
+.link-jogos li a {
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-jogos li p {
+    margin-top: 16px;
+}
+
+.link-jogos li img {
     width: 200px;
+
+    border-radius: 8px;
 }
