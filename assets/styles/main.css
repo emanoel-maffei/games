@@ -9,7 +9,7 @@ main {
 .link-jogos ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 32px;
 
     width: 100%;
@@ -25,11 +25,13 @@ main {
     padding: 16px;
 
     border-radius: 8px;
+
+    transition: transform 0.2s;
 }
 
-/* .link-jogos li:hover {
-
-} */
+.link-jogos li:hover {
+    transform: rotate(2deg);
+}
 
 .link-jogos li a {
     font-size: 1.2rem;
