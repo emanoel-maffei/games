@@ -1,52 +1,84 @@
 main {
-    min-height: 80vh;
+  min-height: 80vh;
 }
 
+/* 
+
+Paleta sugerida pelo Claude:
+
+    Opção 1 — Energia neon (moderna, gamer)
+
+    Fundo: 
+        #0D0221 (roxo quase preto)
+    Primária: 
+        #FF006E (rosa/magenta vibrante)
+    Secundária: 
+        #8338EC (roxo elétrico)
+    Destaque/CTA: 
+        #FFBE0B (amarelo dourado — ótimo para botões)
+    Suporte: 
+        #3A86FF (azul elétrico)
+
+    Opção 2 — Arcade clássico (calorosa, divertida)
+
+    Fundo: 
+        #1A1A2E
+    Primária: 
+        #FF4E00 (laranja explosivo)
+    Secundária: 
+        #FFD400 (amarelo vibrante)
+    Destaque: 
+        #00F5D4 (verde-água neon)
+    Suporte: 
+        #EE4266 (vermelho-rosado)
+
+*/
+
 .link-jogos {
-    padding: 32px;
+  padding: 32px;
 }
 
 .link-jogos ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
 
-    width: 100%;
+  width: 100%;
 
-    list-style: none;
+  list-style: none;
 }
 
 .link-jogos li {
-    width: 232px;
+  width: 232px;
 
-    padding: 16px;
+  padding: 16px;
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .link-jogos li:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .link-jogos li a {
-    font-size: 1.2rem;
-    text-align: center;
-    text-decoration: none;
+  font-size: 1.2rem;
+  text-align: center;
+  text-decoration: none;
 }
 
 .link-jogos li p {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .link-jogos li img {
-    width: 200px;
+  width: 200px;
 
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .link-jogos li.game-in-podio {
-    background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
 }
