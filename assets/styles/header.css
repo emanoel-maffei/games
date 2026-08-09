@@ -2,22 +2,99 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    background-color: black;
+
+    background-color: var(--secondary-color);
     color: white;
     height: 10vh;
 
     padding: 0 32px;
+
+    user-select: none;
+}
+
+header h1 {
+    position: relative;
+    cursor: crosshair;
+}
+
+header h1::after {
+    content: "";
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(2.5px);
+
+    background-color: var(--primary-color);
+    width: 10%;
+    height: 5px;
+
+    border-radius: 8px;
+
+    transition: width 0.5s ease;
+}
+
+header h1:hover::after {
+    width: 100%;
 }
 
 header ul {
     display: flex;
     justify-content: center;
     gap: 16px;
-    
+
     list-style: none;
 }
 
 header a {
-    color: lightblue;
+    position: relative;
+
+    display: inline-block;
+
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+
+    text-decoration: none;
+
+    padding: 8px 12px;
+    border-radius: 8px;
+
+}
+
+header a::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    background-color: var(--primary-color);
+    width: 0%;
+    height: 100%;
+
+    border-radius: 7px;
+
+    transition: width 0.1s, background-color 0.25s;
+}
+
+header a span {
+    position: relative;
+
+    color: var(--text-color);
+}
+
+header a:hover::before {
+    width: 100%;
+    transition: width 0.25s, background-color 0.25s;
+}
+
+header a:focus:hover::before {
+    background-color: var(--primary-color);
+}
+
+header a:focus::before {
+    background-color: var(--accent-color);
+    width: 100%;
+    transition: width 0.25s, background-color 0.25s;
 }
