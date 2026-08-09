@@ -97,9 +97,13 @@ main li a:hover .tilted-body::before {
   transition: height 0.25s, background-color 0.25s;
 }
 
+main li a:focus:hover .tilted-body::before {
+  background-color: var(--primary-color);
+}
+
 main li a:focus .tilted-body::before {
-  height: 100%;
   background-color: var(--accent-color);
+  height: 100%;
   transition: height 0.25s, background-color 0.25s;
 }
 
