@@ -74,7 +74,7 @@ header a::before {
 
     border-radius: 7px;
 
-    transition: width 0.1s;
+    transition: width 0.1s, background-color 0.25s;
 }
 
 header a span {
@@ -85,5 +85,15 @@ header a span {
 
 header a:hover::before {
     width: 100%;
-    transition: width 0.25s;
+    transition: width 0.25s, background-color 0.25s;
+}
+
+header a:focus:hover::before {
+    background-color: var(--primary-color);
+}
+
+header a:focus::before {
+    background-color: var(--accent-color);
+    width: 100%;
+    transition: width 0.25s, background-color 0.25s;
 }
