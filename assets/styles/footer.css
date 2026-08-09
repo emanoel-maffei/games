@@ -1,9 +1,9 @@
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: black;
+    background-color: var(--terciary-color);
     color: white;
-    height: 10vh;
+    min-height: 10vh;
+}
+
+footer img {
+    filter: invert(1);
 }
