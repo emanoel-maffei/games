@@ -48,16 +48,25 @@ Paleta sugerida pelo Claude AI:
     margin: 0;
 }
 
+*::selection {
+    background-color: var(--accent-color);
+}
+
+*:active {
+    cursor: pointer;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 a {
-  outline: none;
+    outline: none;
 }
 
 .emogi {
     display: inline-block;
+
     transition: transform 0.25s;
 }
 
@@ -65,9 +74,47 @@ a {
     transform: rotate(15deg);
 }
 
+img {
+    user-select: none;
+}
+
 hr {
     background-color: var(--secondary-color);
     height: 5px;
-    
+
     border: none;
+}
+
+mark {
+    background-color: var(--accent-color);
+    padding: 0 4px;
+    border-radius: 2px;
+
+    &::selection {
+        background-color: var(--primary-color);
+    }
+}
+
+.marked-text {
+    color: var(--accent-color);
+
+    &::selection {
+        color: var(--primary-color);
+    }
+}
+
+.underline {
+    position: relative;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 100%;
+        transform: translateY(-100%);
+
+        background-color: var(--accent-color);
+        width: 100%;
+        height: 2px;
+    }
 }
