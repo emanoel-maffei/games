@@ -42,6 +42,15 @@ Paleta sugerida pelo Claude AI:
     --text-color: white;
 }
 
+::-webkit-scrollbar {
+    background-color: var(--background-color);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary-color);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
