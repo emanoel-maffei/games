@@ -3,48 +3,124 @@ main {
   min-height: 80vh;
 }
 
-.link-jogos {
+main {
   padding: 32px;
 }
 
-.link-jogos ul {
+main ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 32px;
+  gap: 46px;
 
   width: 100%;
 
   list-style: none;
 }
 
-.link-jogos li {
+main li {
   width: 232px;
-
-  padding: 16px;
 
   border-radius: 8px;
 
   transition: transform 0.2s;
 }
 
-.link-jogos li a {
+main li a {
+  position: relative;
+
+  display: block;
+
   font-size: 1.2rem;
   color: var(--text-color);
+  width: 232px;
+  height: 300px;
   text-align: center;
   text-decoration: none;
+
+  padding: 32px 16px;
 }
 
-.link-jogos li p {
-  margin-top: 16px;
+main li a .tilted-body {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: skew(-10deg) translateX(-50%);
+
+  background-color: var(--background-color);
+  width: 110%;
+  height: 100%;
+
+  border: solid 1px var(--terciary-color);
+
+  z-index: 1;
 }
 
-.link-jogos li img {
-  width: 200px;
+main li a .tilted-body::before {
+  content: "";
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-100%);
+
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 5%;
+
+  transition: height 0.5s, background-color 0.25s;
+
+  animation-name: wave-motion;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+main li:nth-child(even) a .tilted-body::before {
+  animation-duration: 17.5s;
+}
+
+@keyframes wave-motion {
+  from {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  to {
+    top: 0;
+    transform: translateY(0%);
+  }
+}
+
+main li a:hover .tilted-body::before {
+  height: 100%;
+  transition: height 0.25s, background-color 0.25s;
+}
+
+main li a:focus .tilted-body::before {
+  height: 100%;
+  background-color: var(--accent-color);
+  transition: height 0.25s, background-color 0.25s;
+}
+
+main li img {
+  position: relative;
+
+  width: 190px;
 
   border-radius: 8px;
+
+  z-index: 2;
 }
 
-.link-jogos li.game-in-podio {
-  background-color: rgb(255, 255, 255);
+main li p {
+  position: relative;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  margin-top: 16px;
+
+  z-index: 3;
 }
