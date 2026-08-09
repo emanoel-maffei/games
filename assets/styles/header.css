@@ -14,6 +14,7 @@ header {
 
 header h1 {
     position: relative;
+    cursor: crosshair;
 }
 
 header h1::after {

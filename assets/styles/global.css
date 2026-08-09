@@ -58,6 +58,7 @@ Paleta sugerida pelo Claude AI:
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
 }
 
 a {
