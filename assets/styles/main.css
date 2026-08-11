@@ -1,7 +1,9 @@
 main {
   background-color: var(--background-color);
   min-height: 80vh;
-  padding: 32px;
+  padding: calc(10vh + 32px);
+
+  z-index: 0;
 }
 
 main ul {
