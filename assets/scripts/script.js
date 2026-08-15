@@ -109,6 +109,11 @@ const games = {
         "image": "assets/imgs/games/dig-out-of-prison.png",
         "name": "Dig out of Prison",
     },
+    22: {
+        "link": "https://emanoel-maffei.github.io/UniFil-Intermediario-2025/Byte%20Quiz/index.html",
+        "image": "assets/imgs/games/byte-quiz.png",
+        "name": "Byte Quiz",
+    },
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
