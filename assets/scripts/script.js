@@ -28,6 +28,7 @@ const games = {
         "link": "https://emanoel-dev-jr.github.io/Spacecraft-Game/",
         "image": "assets/imgs/games/space-craft-game.png",
         "name": "Spacecraft Game",
+        "devGame": true,
     },
     6: {
         "link": "https://sites.google.com/site/populardoodlegames/obby-run-star",
@@ -113,11 +114,13 @@ const games = {
         "link": "https://emanoel-maffei.github.io/UniFil-Intermediario-2025/Byte%20Quiz/index.html",
         "image": "assets/imgs/games/byte-quiz.png",
         "name": "Byte Quiz",
+        "devGame": true,
     },
     23: {
         "link": "https://tron-arena.lovable.app",
         "image": "assets/imgs/games/light-cycles.jpg",
         "name": "Light Cycles",
+        "devGame": true,
     },
 };
 
@@ -134,9 +137,11 @@ console.log(`\n
 
 for (let gameIndex in games) {
     console.log(`\n${+gameIndex + 1}:
-        \n\tLink . . . . . : ${games[gameIndex].link}
-        \n\tCaminho Imagem : ${games[gameIndex].image}
-        \n\tNome . . . . . : ${games[gameIndex].name}\n\n`);
+        \n\tLink: ${games[gameIndex].link}
+        \n\tCaminho Imagem . . . : ${games[gameIndex].image}
+        \n\tNome . . . . . . . . : ${games[gameIndex].name}
+        \n\tJogo do Desenvolvedor: ${games[gameIndex]?.devGame ? "Sim" : "Não"}
+        \n`);
 
     const li = document.createElement("li");
     
@@ -144,10 +149,17 @@ for (let gameIndex in games) {
     a.classList.add("button-link");
     a.href = games[gameIndex].link;
     a.target = "_blank";
+    a.title = `${games[gameIndex].name}`;
+    if (games[gameIndex]?.devGame) {
+        a.title += `\n\n[ DevGame ]`;
+    }
     li.appendChild(a);
 
     const div = document.createElement("div");
     div.classList.add("tilted-body");
+    if (games[gameIndex]?.devGame) {
+        div.classList.add("dev-game");
+    }
     a.appendChild(div);
     
     const img = document.createElement("img");

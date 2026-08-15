@@ -76,6 +76,10 @@ main li a .tilted-body::before {
   animation-direction: alternate;
 }
 
+main li a .tilted-body.dev-game::before {
+  background-color: var(--secondary-color);
+}
+
 main li:nth-child(even) a .tilted-body::before {
   animation-delay: 5s;
 }
