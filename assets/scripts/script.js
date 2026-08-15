@@ -114,6 +114,11 @@ const games = {
         "image": "assets/imgs/games/byte-quiz.png",
         "name": "Byte Quiz",
     },
+    23: {
+        "link": "https://tron-arena.lovable.app",
+        "image": "assets/imgs/games/light-cycles.jpg",
+        "name": "Light Cycles",
+    },
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
