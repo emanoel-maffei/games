@@ -1,7 +1,7 @@
 main {
   background-color: var(--background-color);
   min-height: 80vh;
-  padding: calc(10vh + 32px);
+  padding: 32px;
 
   z-index: 0;
 }
@@ -70,13 +70,14 @@ main li a .tilted-body::before {
   transition: height 0.5s, background-color 0.25s;
 
   animation-name: wave-motion;
-  animation-duration: 20s;
+  animation-duration: 40s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
 main li:nth-child(even) a .tilted-body::before {
-  animation-duration: 17.5s;
+  animation-delay: 5s;
 }
 
 @keyframes wave-motion {
