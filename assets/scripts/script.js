@@ -123,7 +123,7 @@ const games = {
         "devGame": true,
     },
     24: {
-        "link": "",
+        "link": "https://learn-duck.firebaseapp.com/class/sh3llsh0ck",
         "image": "assets/imgs/games/shell-shockers.webp",
         "name": "Shell Shockers",
     },
