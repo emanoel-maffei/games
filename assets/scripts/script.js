@@ -122,6 +122,11 @@ const games = {
         "name": "Light Cycles",
         "devGame": true,
     },
+    24: {
+        "link": "",
+        "image": "assets/imgs/games/shell-shockers.webp",
+        "name": "Shell Shockers",
+    },
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
