@@ -127,6 +127,11 @@ const games = {
         "image": "assets/imgs/games/shell-shockers.webp",
         "name": "Shell Shockers",
     },
+    25: {
+        "link": "https://learn-duck.firebaseapp.com/class/the-binding-of-isaac",
+        "image": "assets/imgs/games/the-binding-of-isaac.png",
+        "name": "The Binding of Isaac",
+    },
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
