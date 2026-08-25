@@ -132,6 +132,11 @@ const games = {
         "image": "assets/imgs/games/the-binding-of-isaac.png",
         "name": "The Binding of Isaac",
     },
+    26: {
+        "link": "https://socketlab.itch.io/laststand",
+        "image": "assets/imgs/games/seraphs-last-stand.webp",
+        "name": "Seraph's Last Stand",
+    },
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
