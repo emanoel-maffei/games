@@ -137,6 +137,11 @@ const games = {
         "image": "assets/imgs/games/seraphs-last-stand.webp",
         "name": "Seraph's Last Stand",
     },
+    // 27: {
+    //     "link": "",
+    //     "image": "",
+    //     "name": ""
+    // }
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
