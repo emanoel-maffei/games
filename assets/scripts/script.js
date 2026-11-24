@@ -137,11 +137,11 @@ const games = {
         "image": "assets/imgs/games/seraphs-last-stand.webp",
         "name": "Seraph's Last Stand",
     },
-    // 27: {
-    //     "link": "",
-    //     "image": "",
-    //     "name": ""
-    // }
+    27: {
+        "link": "https://felipefonseca08.github.io/ESPACO-LIMITADO/",
+        "image": "assets/imgs/games/limited-space.png",
+        "name": "Limited Space"
+    }
 };
 
 const gameList = document.querySelector("#link-jogos > ul");
