@@ -140,7 +140,8 @@ const games = {
     27: {
         "link": "https://felipefonseca08.github.io/ESPACO-LIMITADO/",
         "image": "assets/imgs/games/limited-space.png",
-        "name": "Limited Space"
+        "name": "Limited Space",
+        "devGame": true
     }
 };
 
